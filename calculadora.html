@@ -22,7 +22,7 @@
         <h1>calculador ZIKA</h1>
         <div class="calculadora">
             <h2>Calculadora</i></h2>
-            <p id="resultado"></p>
+            <input type="display" id="resultado" readonly></input type="text">
             <table>
                 <tr>
                     <td><button class="botao" id="limpa">C</td>
@@ -50,7 +50,7 @@
                     <td><button class="botao" onclick="digitar(2)">2</button></td>
                     <td><button class="botao" onclick="digitar(3)">3</button></td>
                     <td><button class="botao" id="multi" onclick="digitar('*')" >*</button></td>
-                    <td rowspan="2"><button class="botao" id="igual" style="height: 106px;">=</button></td>
+                    <td rowspan="2"><button class="botao" id="igual" onclick="resul()" style="height: 106px;">=</button></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button class="botao" onclick="digitar(0)" style="width: 106px;">0</button></td>

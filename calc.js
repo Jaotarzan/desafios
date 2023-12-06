@@ -1,43 +1,40 @@
 function digitar(a) {
-    let resultado = document.getElementById("resultado").innerHTML + a;
-    document.getElementById("resultado").innerHTML = resultado;
+    let resultado = document.getElementById("resultado").value;
+    document.getElementById("resultado").value = resultado + a;
 }
 
-let limpar = document.querySelector("#limpa");
-limpar.addEventListener("click", function() {
+function limpar() {
     resultado = ""
-    document.getElementById("resultado").innerHTML = resultado;
-})
+    document.getElementById("resultado").value = resultado;
+}
 
-let igual = document.querySelector("#igual");
-igual.addEventListener("click", function() {
-    let resultado = document.getElementById("resultado").innerHTML;
+function resul() {
+    let resultado = document.getElementById("resultado").value;
     resultado = resultado.replace("^", "**").replace("%", "/100")
-    console.log(resultado)
     resultado = eval(resultado);
-    document.getElementById("resultado").innerHTML = resultado;
-})
+    document.getElementById("resultado").value = resultado;
+}
 
 let sin = document.querySelector("#seno");
 sin.addEventListener("click", function() {
-    let resultado = document.getElementById("resultado").innerHTML; 
+    let resultado = document.getElementById("resultado").value; 
     resultado = `Math.sin(${resultado})`
     resultado = eval(resultado);
-    document.getElementById("resultado").innerHTML = resultado;
+    document.getElementById("resultado").value = resultado;
 })
 
 let cos = document.querySelector("#cos");
 cos.addEventListener("click", function() {
-    let resultado = document.getElementById("resultado").innerHTML; 
+    let resultado = document.getElementById("resultado").value; 
     resultado = `Math.cos(${resultado})`
     resultado = eval(resultado);
-    document.getElementById("resultado").innerHTML = resultado;
+    document.getElementById("resultado").value = resultado;
 })
 
 let tan = document.querySelector("#tan");
 tan.addEventListener("click", function() {
-    let resultado = document.getElementById("resultado").innerHTML; 
+    let resultado = document.getElementById("resultado").value; 
     resultado = `Math.tan(${resultado})`
     resultado = eval(resultado);
-    document.getElementById("resultado").innerHTML = resultado;
+    document.getElementById("resultado").value = resultado;
 })
