@@ -25,7 +25,12 @@
             <input type="display" id="resultado" readonly></input type="text">
             <table>
                 <tr>
-                    <td><button class="botao" id="limpa">C</td>
+                    <td colspan="2"><button class="botao" onclick="digitar('(')" style="width: 106px;">(</button></td>
+                    <td colspan="2"><button class="botao" onclick="digitar(')')" style="width: 106px;">)</button></td>
+                    <td><button class="botao" id="limpa" onclick="deletar()">del</td>
+                </tr>
+                <tr>
+                    <td><button class="botao" id="limpa" onclick="limpar()">C</td>
                     <td><button class="botao" id="porcento" onclick="digitar('%')">%</td>
                     <td><button class="botao" id="seno">sin</button></td>
                     <td><button class="botao" id="cos">cos</button></td>
@@ -43,7 +48,7 @@
                     <td><button class="botao" onclick="digitar(5)">5</button></td>
                     <td><button class="botao" onclick="digitar(6)">6</button></td>
                     <td><button class="botao" id="mais" onclick="digitar('+')">+</button></td>
-                    <td><button class="botao" id="raiz">√</button></td>
+                    <td><button class="botao" id="raiz" onclick="digitar('√')">√</button></td>
                 </tr>
                 <tr>
                     <td><button class="botao" onclick="digitar(1)">1</button></td>
