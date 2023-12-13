@@ -13,6 +13,7 @@ function deletar() {
 function limpar() {
     resultado = ""
     document.getElementById("resultado").value = resultado;
+    document.getElementById("igual").focus();
 }
 
 function resul() {
